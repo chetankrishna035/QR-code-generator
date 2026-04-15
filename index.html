@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Gen - Instant QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- QRCode.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/hero-img.png" alt="QR Generator Hero" class="hero-image">
+            <h1>QR Generator</h1>
+            <p>Paste your link below to generate a high-quality QR code instantly.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="url" id="url-input" placeholder="https://example.com" required>
+                <button id="generate-btn">Generate QR Code</button>
+            </div>
+
+            <div id="qr-container" class="qr-hidden">
+                <div id="qrcode"></div>
+                <button id="download-btn" class="download-btn">Download PNG</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 QR Gen. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
